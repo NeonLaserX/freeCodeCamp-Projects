@@ -1,2 +1,2 @@
-# freeCodeCamp-Projects
+# freeCodeCamp-projects
 All of the freeCodeCamp Certification Projects
