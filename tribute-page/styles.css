@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #FFFFFF ;
+  color: #333333;
+  margin: 30px 5px;
+
+}
+
+.divider {
+  height: 1px;
+  background-color: black;
+  margin: 10px auto;
+}
+.large-divider {
+  height: 4px;
+  /* border: 1px double black; */
+  background-color: black;
+  margin: 100px auto;
+}
+
+#main {
+  background-color: #F1F1F1;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+#title {
+  /* text-transf  orm: uppercase; */
+  letter-spacing: 1px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+#main > p {
+  text-align: center;
+}
+
+#img-div {
+  background-color: white;
+  margin: 40px;
+  margin-bottom: 50px;
+  padding: 20px;
+}
+
+#img-caption {
+  text-align: center;
+  /* margin: 20px */
+}
+
+#image {
+  display: block;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+#tribute-info {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.tribute-title {
+  text-align: center;
+  margin: 80px;
+}
+
+.tribute-content {
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+
+.tribute-content p {
+  margin-left: 30px ;
+}
+
+.tribute-link {
+  text-align: center;
+  margin: -60px;
+}

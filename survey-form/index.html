@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel="stylesheet" href="styles.css" type="text/css">
+  </head>
+  <body>
+    
+    <h1 id="title">Survey Form</h1>
+      <p id="description">This is a part of freeCodeCamp Certification Project</p>
+      <div class="container">
+        <form id="survey-form" action="https://www.httpbin.org/post" method="post">
+          <label id="name-label" for="name">Name: <input type="text" id="name" name="name" placeholder="Holly Micheals" required></label>
+          <label id="email-label" for="email">Email: <input type="email" id="email" name="email" placeholder="pussySlayerxxx6969@hotmail.com" required></label>
+          <label id="number-label" for="number">Your Lucky Number: <input type="number" id="number" name="number" min="13" max="120" placeholder="just select a fucking number?"></label>
+          <br> <!-- Temp for testing -->
+          <label for="gender">Gender: 
+            <input type="radio" id="gender-male" name="gender" value="male" checked>Male
+            <input type="radio" id="gender-female" name="gender" value="female">Female
+          </label>
+          <br> <!-- Temp for testing -->
+          <label>
+            Select your favorite star: 
+            <select id="dropdown">
+            <option>(select your favorite star)</option>
+            <option>Angela White</option>
+            <option>Holly Micheals</option>
+            <option>Bonnie Blue</option>
+            <option>Candy Love</option>
+            <option>Mia Malkova</option>
+            <option>Emilly Wills</option>
+            <option>Some other british bitch</option>
+          </select>
+          </label>
+          <br> <!-- Temp for testing -->
+          <label for="favorite-sites">
+            Select your Favorite Sites:
+            <input type="checkbox" id="youtube" name="favorite-sites" value="youtube">YouTube
+            <input type="checkbox" id="pornhub" name="favorite-sites" value="pornhub">PornHub
+            <input type="checkbox" id="freecodecamp" name="favorite-sites" value="freeCodeCamp">freeCodeCamp
+            <input type="checkbox" id="github" name="favorite-sites" value="github">GitHub
+          </label>
+          <br> <!-- Temp for testing -->
+          <label for="feedback">
+            Feedback: 
+            <textarea id="feedback" rows="5" cols="50" placeholder="This website made me wet."></textarea>
+          </label>
+          <br> <!-- Temp for testing -->
+
+          <input type="submit" id="submit" name="submit-form" value="Submit">
+        </form>
+      </div>
+    
+
+  </body>
+</html>
