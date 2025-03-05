@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="NeonLaserX">
+    <meta name="description" content="Markdown Documentation">
+    <title>Markdown Showdown | LaserX Industries</title>
+
+    <!-- Connected Files -->
+    <link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+<body>
+    <nav id="navbar">
+        <header>Markdown Documentation</header>
+        <ul>
+            <li>
+                <a href="#introduction" class="nav-link">Introduction</a>
+            </li>
+            <li>
+                <a href="#basic_syntax" class="nav-link">Basic Syntax</a>
+            </li>
+            <li>
+                <a href="#lists" class="nav-link">Lists</a>
+            </li>
+            <li>
+                <a href="#links_and_images" class="nav-link">Links and Images</a>
+            </li>
+            <li>
+                <a href="#code_formatting" class="nav-link">Code Formatting</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header class="title">Introduction</header>
+            <h3>What is Markdown?</h3>
+            <p>
+                Markdown is a lightweight markup language designed for easy formatting of plain text. It allows users to create formatted documents using simple syntax, which can be converted into HTML and other formats.
+            </p>
+            <div class="gap"></div>
+            <h3>Why use Markdown?</h3>
+            <ul>
+                <li><strong>Simplicity: </strong>Easy to write and read.</li>
+                <li><strong>Portability: </strong>Works across different platform and tools.</li>
+                <li><strong>Compatibility: </strong>Can be converted to various formats like HTML, PDF, etc.</li>
+                <li><strong>Widely used: </strong>Commonly used in documentation, README files, blogs, and note-taking apps.</li>
+            </ul>
+        </section>
+        <div class="divider"></div>
+        <section id="basic_syntax" class="main-section">
+            <header class="title">Basic Syntax</header>
+            <h3>Headings</h3>
+            <p>
+                Use <code>&ThinSpace;#&ThinSpace;</code> followed by a space for headings. The number of <code>&ThinSpace;#&ThinSpace;</code> symbols determines the heading level.
+            </p>
+            <pre><code class="code-block"># Heading 1
+## Heading 2
+### Heading 3
+#### Heading 4
+##### Heading 5
+###### Heading 6</code></pre>    
+            <div class="gap"></div>
+            <h3>Paragraphs & Line Breaks</h3>
+            <p>Write text normally for paragraphs. To create a new paragraph, leave a blank line between two blocks of text. <br>To insert a line break within a paragraph, use two spaces at the end of a line.</p>
+            <pre><code class="code-block">This is a paragraph.
+This is another paragraph.
+
+This line has a  
+manual line break.</code></pre>
+            <div class="gap"></div>
+            <h3>Bold, Italics, and Strikethrough</h3>
+            <ul>
+                <li><strong>Bold:</strong> Use double asterisks <code>(**bold**)</code> or double underscores <code>(__bold__)</code>.</li>
+                <li><em>Italic: </em>Use single asterisks <code>(*italic*)</code> or single underscores <code>(_italic_)</code>.
+                </li>
+                <li><strike>Strikethrough:</strike> Use double tildes (~~strikethrough~~).</li>
+            </ul>
+            <pre><code class="code-block">**Bold Text**
+*Italic Text*
+~~Strikethrough Text~~</code></pre>
+        </section>
+        <div class="divider"></div>
+        <section id="lists" class="main-section">
+            <header class="title">Lists</header>
+            <p>Markdown supports both ordered (numbered) and unordered (bullet point) lists.</p>
+            <div class="gap"></div>
+            <h3>Ordered Lists</h3>
+            <p>Use numbers followed by a period <code>(.)</code> to create an ordered list. The numbers don’t have to be sequential; Markdown will automatically correct them.</p>
+            <pre><code class="code-block">1. First item  
+2. Second item  
+3. Third item</code></pre>
+            <div class="gap"></div>
+            <h3>Unordered Lists</h3>
+            <p>Use <code>-</code>, <code>*</code>, or <code>+</code> followed by a space to create an unordered list.</p>
+            <pre><code class="code-block">- Item 1  
+- Item 2  
+- Item 3</code></pre>
+        <div class="gap"></div>
+        <h3>Nested Lists</h3>
+        <p>Indent items using two spaces or a tab to create sublists.</p>
+        <pre><code class="code-block">- Main item  
+- Sub-item  
+- Sub-item  
+- Another main item  
+1. Sub-item  
+2. Sub-item  </code></pre>
+        </section> 
+        <div class="divider"></div>
+        <section id="links_and_images" class="main-section">
+            <header class="title">Links and Images</header>
+            <p>Markdown allows you to add hyperlinks and images using simple syntax.</p>
+            <div class="gap"></div>
+            <h3>Adding Links</h3>
+            <p>Use square brackets <code>[]</code> for the text and parentheses <code>()</code> for the URL.</p>
+            <pre><code class="code-block">[Visit Google](https://www.google.com)</code></pre>
+            <p>To add a tooltip when hovering over the link:</p>
+            <pre><code class="code-block">[Google](https://www.google.com "Go to Google")</code></pre>
+            <p>You can also create reference-style links for better readability:</p>
+            <pre><code class="code-block">[OpenAI][1]
+
+[1]: https://www.openai.com</code></pre>
+            <div class="gap"></div>
+            <h3>Embedded Images</h3>
+            <p>Use <code>![]()</code> with an image URL or file path.</p>
+            <pre><code class="code-block">![Alt Text](https://example.com/image.jpg)</code></pre>
+            <p>To add a tooltip (title) to the image:</p>
+            <pre><code class="code-block">![Alt Text](https://example.com/image.jpg "Image Title")</code></pre>
+            <p>You can also use reference-style syntax for images:</p>
+            <pre><code class="code-block">![Logo][logo]
+
+[logo]: https://example.com/logo.png</code></pre>
+        </section>
+        <div class="divider"></div>
+        <section id="code_formatting" class="main-section">
+            <header class="title">Code formatting</header>
+            <p>Markdown allows you to format code using inline code snippets or code blocks.</p>
+            <div class="gap"></div>
+            <h3>Inline Code</h3>
+            <p>Use backticks <code>&ThinSpace;`&ThinSpace;</code> to highlight inline code within a sentence.</p>      
+            <pre><code class="code-block">Use the `print()` function to display output in Python.</code></pre>
+            <p>Rendered as: <br>Use the <code>&ThinSpace;print()&ThinSpace;</code> function to display output in Python.</p>
+            <div class="gap"></div>
+            <h3>Code Blocks</h3>
+            <p>For multiline code blocks, wrap the code with triple backticks (```) or indent each line with four spaces.</p>
+            <h4>Using Triple Backticks</h4>
+            <p>You can specify the programming language for syntax highlighting.</p>
+            <pre><code class="code-block">```python
+
+def hello():
+    print("Hello, World!")</code></pre>
+            <pre><code class="code-block">
+#### Using Four Spaces (Indented)  
+Each line of code must be indented with four spaces.  
+
+```markdown
+    def hello():
+        print("Hello, World!")
+                </code></pre>
+        </section>
+    </main>
+
+</body>
+</html>
